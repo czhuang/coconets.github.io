@@ -20,9 +20,9 @@ layout: default
 
 #### [NOT from coconet!!]
 
-{% for file in site.audio %}
+{% for i in (0..1) %}
 <audio controls> == $0
-  <source src=file type="audio/mp3">
+  <source src="audio/o_{{ i }}.mp3" type="audio/mp3">
   "Your brower does not support the audio element."
 </audio>
 {% endfor %}
