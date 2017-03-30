@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="home">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {{ post.excerpt }}
+        Read <a class="post-full-link" href="{{ post.url | prepend: site.baseurl }}">full post</a>.
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+<H3> For reference: Random 8-measure Bach chorales from validation set.  </H3>
+<H4><em><b>NOT from coconet!!</b></em></H4>
+{% for i in (0..1) %}
+<audio controls> == $0
+  <source src="audio/o_{{ i }}.mp3" type="audio/mp3">
+  "Your brower does not support the audio element."
+</audio>
+{% endfor %}
