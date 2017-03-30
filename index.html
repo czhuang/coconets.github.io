@@ -15,6 +15,17 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+For reference: Random 8-measure Bach chorales from validation set.
+[NOT from coconet!!]
+{% for file in site.audio %}
+<audio controls> == $0
+  <source src=file type="audio/mp3">
+  "Your brower does not support the audio element."
+</audio>
+{% endfor %}
+
+
 <audio controls> == $0
   <source src="./audio/o_0.mp3" type="audio/mp3">
   "Your brower does not support the audio element."
