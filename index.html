@@ -1,36 +1,41 @@
 ---
 layout: default
 ---
-<div class="home">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        {{ post.excerpt }}
-        Read <a class="post-full-link" href="{{ post.url | prepend: site.baseurl }}">full post</a>.
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-
-<H2> For reference: Random 8-measures of Bach chorales from validation set.</H2>
-<H4><em><b>NOT computer generated!!  Though all samples are midi synthesized unless mentioned otherwise.</b></em></H4>
-<audio controls> == $0
-  <source src="audio/bach/o_11.mp3" type="audio/mp3">
-  "Your brower does not support the audio element."
-</audio>
-<audio controls> == $0
-  <source src="audio/bach/o_14.mp3" type="audio/mp3">
-  "Your brower does not support the audio element."
-</audio>
-<br \>
-<br \>
-<br \>
-
 <H1> Coconet samples </H1>
+We'll showcase Coconet tackling a variety of tasks.  We also embed samples from related work to allow for comparisons.
+
+<H3> Rewriting </H3>
+<p>
+Primed with a Bach chorale from validation set. Rewrite voice-by-voice as follows: 
+<br>First, pick a random voice to rewrite using Gibbs, then conditon on the new voice along with other original parts, and rewrite another new voice.
+<br>Repeat until all voices are generated. 
+</p>
+The source Bach chorale<br>
+<audio controls> == $0
+  <source src="audio/coconet/rewriting/0_2.mp3" type="audio/mp3">
+  "Your brower does not support the audio element."
+</audio>
+<br>Rewritten by Coconet<br>
+<audio controls> == $0
+  <source src="audio/coconet/rewriting/1_2.mp3" type="audio/mp3">
+  "Your brower does not support the audio element."
+</audio>
+<br \>
+<br \>
+<br>The source Bach chorale<br>
+<audio controls> == $0
+  <source src="audio/coconet/rewriting/0_8.mp3" type="audio/mp3">
+  "Your brower does not support the audio element."
+</audio>
+<br>Rewritten by Coconet<br>
+<audio controls> == $0
+  <source src="audio/coconet/rewriting/1_8.mp3" type="audio/mp3">
+  "Your brower does not support the audio element."
+</audio>
+<br \>
+<br \>
+<br \>
+
 <H3> Unconditioned, generated using Gibbs sampling (multiple rewrites) </H3>
 Generated completely from scratch, from empty pianoroll.<br>
 <audio controls> == $0
@@ -84,37 +89,7 @@ Primed with chorale melody from validaiton set.<br>
 <br \>
 <br \>
 <br \>
-<H3> Rewriting </H3>
-<p>
-Primed with a Bach chorale from validation set. Rewrite voice-by-voice as follows: 
-<br>First, pick a random voice to rewrite using Gibbs, then conditon on the new voice along with other original parts, and rewrite another new voice.
-<br>Repeat until all voices are generated. 
-</p>
-The source Bach chorale<br>
-<audio controls> == $0
-  <source src="audio/coconet/rewriting/0_2.mp3" type="audio/mp3">
-  "Your brower does not support the audio element."
-</audio>
-<br>Rewritten by Coconet<br>
-<audio controls> == $0
-  <source src="audio/coconet/rewriting/1_2.mp3" type="audio/mp3">
-  "Your brower does not support the audio element."
-</audio>
-<br \>
-<br \>
-<br>The source Bach chorale<br>
-<audio controls> == $0
-  <source src="audio/coconet/rewriting/0_8.mp3" type="audio/mp3">
-  "Your brower does not support the audio element."
-</audio>
-<br>Rewritten by Coconet<br>
-<audio controls> == $0
-  <source src="audio/coconet/rewriting/1_8.mp3" type="audio/mp3">
-  "Your brower does not support the audio element."
-</audio>
-<br \>
-<br \>
-<br \>
+
 
 
 
