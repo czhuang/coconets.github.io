@@ -14,7 +14,7 @@ description:         "samples for different musical scenarios"
 base-url:             "base-url"
 baseurl:             ""
 url:                 "https://coconets.github.io"
-github:              "https://coconets.github.io"
+github:              "https://github.io/coconets"
 timezone:            UTC
 
 # Custom vars
