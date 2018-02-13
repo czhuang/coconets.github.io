@@ -9,8 +9,8 @@ paginate_path: "page:num"
 
 # Setup
 title:               Coconet
-tagline:             "NADE generative model of music, with new insights on sampling"
-description:         "samples for different musical scenarios"
+tagline:             "composing music with orderless NADE and Gibbs sampling"
+description:         "counterpoint by convolution: a deep generative model for partial score completion"
 base-url:             "base-url"
 baseurl:             ""
 url:                 "https://coconets.github.io"
